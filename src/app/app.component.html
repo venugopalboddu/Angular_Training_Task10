@@ -1,0 +1,46 @@
+<div class="container" style="margin-top: 50px">
+  <div class="row"> 
+        <div class="col-md-9 offset-md-2">  
+<h5>If profile pic not displayed take the firstname (Ojas) and Lastname (Technologies) and display OT</h5><br/><hr/>
+<form [formGroup]="form" class="form-group" (ngSubmit)="onSubmit()">
+   <div class="form-group">
+    <label><b style="color: blue">First Name:</b></label>
+    <input type="text" formControlName="fname" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.fname.errors }">
+    <div *ngIf="submitted && f.fname.errors" class="invalid-feedback">
+        <div *ngIf="f.fname.errors.required">First Name is required</div>
+    </div>
+    </div>
+
+    <div class="form-group">
+    <label><b style="color: blue">Last Name:</b></label>
+    <input type="text" formControlName="lname" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.lname.errors }">
+    <div *ngIf="submitted && f.lname.errors" class="invalid-feedback">
+        <div *ngIf="f.lname.errors.required">Last Name is required</div>
+    </div>
+    </div>
+
+    <button class="btn btn-primary">Login</button>&nbsp;
+</form><br>
+
+    <ng-container *ngFor="let d of fdata">
+       
+        <ng-container *ngIf="d.fname==fname1 && d.lname==lname1">
+       <img [src]="d.image" height="270px">
+       <p *ngIf="d.image==''">{{storage}}</p>
+       
+       
+  </ng-container>
+
+</ng-container>
+
+<!-- <ng-container *ngIf="status1">
+      
+    <p>Enter correct data</p>
+    
+</ng-container> -->
+
+</div>
+  </div>
+ 
+</div>
+

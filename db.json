@@ -1,0 +1,34 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "fname": "Venugopal",
+      "lname": "Boddu",
+      "image": "https://cdn0.iconfinder.com/data/icons/avatar-78/128/12-512.png"
+    },
+    {
+      "id": 2,
+      "fname": "Rani",
+      "lname": "Kumari",
+      "image": ""
+    },
+    {
+      "id": 3,
+      "fname": "Naveen",
+      "lname": "Kumar",
+      "image": ""
+    },
+    {
+      "id": 4,
+      "fname": "Pavani",
+      "lname": "Kolla",
+      "image": "https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_female_business-512.png"
+    },
+    {
+      "id": 5,
+      "fname": "Ojas",
+      "lname": "Technologies",
+      "image": ""
+    }
+  ]
+}
