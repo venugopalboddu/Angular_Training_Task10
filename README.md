@@ -1,4 +1,4 @@
-# Http
+# If profile pic not displayed take the firstname (Ojas) and Lastname (Technologies) and display OT
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.5.
 
